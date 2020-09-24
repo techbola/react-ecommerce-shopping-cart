@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Green T-Shirt",
+      "price": 100,
+      "sku": 1234567,
+      "description": "Cool Green T-Shirt",
+      "availableSizes": ["S", "M", "L"],
+      "isFreeShipping": true
+    },
+    {
+      "id": 2,
+      "title": "Blue T-Shirt",
+      "price": 60,
+      "sku": 1236667,
+      "description": "Cool Blue T-Shirt",
+      "availableSizes": ["S", "M", "L"],
+      "isFreeShipping": false
+    },
+    {
+      "id": 3,
+      "title": "Red T-Shirt",
+      "price": 70,
+      "sku": 1238867,
+      "description": "Cool Red T-Shirt",
+      "availableSizes": ["S", "M", "L"],
+      "isFreeShipping": true
+    },
+    {
+      "id": 4,
+      "title": "Yellow T-Shirt",
+      "price": 90,
+      "sku": 1299567,
+      "description": "Cool Yellow T-Shirt",
+      "availableSizes": ["S", "M", "L"],
+      "isFreeShipping": false
+    },
+    {
+      "id": 5,
+      "title": "Pink T-Shirt",
+      "price": 40,
+      "sku": 2334567,
+      "description": "Cool Pink T-Shirt",
+      "availableSizes": ["S", "M", "L"],
+      "isFreeShipping": true
+    }
+  ]
+}
