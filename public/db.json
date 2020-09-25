@@ -15,7 +15,7 @@
       "price": 60,
       "sku": 1236667,
       "description": "Cool Blue T-Shirt",
-      "availableSizes": ["S", "M", "L"],
+      "availableSizes": ["S", "L"],
       "isFreeShipping": false
     },
     {
@@ -24,7 +24,7 @@
       "price": 70,
       "sku": 1238867,
       "description": "Cool Red T-Shirt",
-      "availableSizes": ["S", "M", "L"],
+      "availableSizes": ["S", "M"],
       "isFreeShipping": true
     },
     {
@@ -33,7 +33,7 @@
       "price": 90,
       "sku": 1299567,
       "description": "Cool Yellow T-Shirt",
-      "availableSizes": ["S", "M", "L"],
+      "availableSizes": ["M"],
       "isFreeShipping": false
     },
     {
@@ -42,7 +42,7 @@
       "price": 40,
       "sku": 2334567,
       "description": "Cool Pink T-Shirt",
-      "availableSizes": ["S", "M", "L"],
+      "availableSizes": ["L"],
       "isFreeShipping": true
     }
   ]
