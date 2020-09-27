@@ -3,6 +3,8 @@ import "./App.css";
 import Products from "./components/Products";
 import Filter from "./components/Filter";
 import Basket from "./components/Basket";
+import { Provider } from "react-redux";
+import store from "./store";
 
 class App extends Component {
   constructor(props) {
@@ -94,32 +96,34 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h1>Ecommerce Shopping Cart</h1>
-        <hr />
-        <div className="row">
-          <div className="col-md-8">
-            <Filter
-              size={this.state.size}
-              sort={this.state.sort}
-              handleChangeSize={this.handleChangeSize}
-              handleChangeSort={this.handleChangeSort}
-              count={this.state.filteredProducts.length}
-            />
-            <hr />
-            <Products
-              products={this.state.filteredProducts}
-              handleAddToCart={this.handleAddToCart}
-            />
-          </div>
-          <div className="col-md-4">
-            <Basket
-              cartItems={this.state.cartItems}
-              handleRemoveFromCart={this.handleRemoveFromCart}
-            />
+        <Provider store={store}>
+        <div className="container">
+          <h1>Ecommerce Shopping Cart</h1>
+          <hr />
+          <div className="row">
+            <div className="col-md-8">
+              <Filter
+                size={this.state.size}
+                sort={this.state.sort}
+                handleChangeSize={this.handleChangeSize}
+                handleChangeSort={this.handleChangeSort}
+                count={this.state.filteredProducts.length}
+              />
+              <hr />
+              <Products
+                products={this.state.filteredProducts}
+                handleAddToCart={this.handleAddToCart}
+              />
+            </div>
+            <div className="col-md-4">
+              <Basket
+                cartItems={this.state.cartItems}
+                handleRemoveFromCart={this.handleRemoveFromCart}
+              />
+            </div>
           </div>
         </div>
-      </div>
+        </Provider>
     );
   }
 }
